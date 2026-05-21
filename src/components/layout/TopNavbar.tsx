@@ -3,18 +3,19 @@ import { wa, WA_MESSAGES } from '../../utils/whatsapp';
 
 export default function TopNavbar() {
   const navLinks = [
-    'Home', 'Casino', 'Sports', 'Crash', 'Live', 'Slots', 'Tournaments', 'VIP', 'Promotions'
+    'Home', 'Casino', 'Sports', 'Crash', 'Live', 'Slots', 'Tournaments', 'Promotions'
   ];
 
   return (
     <nav className="sticky top-0 z-50 bg-bg-secondary/95 backdrop-blur-xl border-b border-border-glow shadow-lg">
       <div className="max-w-[1920px] mx-auto px-3 py-2">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 group cursor-pointer">
-            <div className="text-2xl transition-transform group-hover:scale-110 group-hover:rotate-12">🪳</div>
-            <div className="hidden sm:block font-black text-base bg-gradient-to-r from-neon-green via-emerald-400 to-neon-green bg-clip-text text-transparent animate-gradient-x">
-              cockroach.bet
-            </div>
+          <div className="flex items-center group cursor-pointer">
+            <img
+              src="/images/logo.png"
+              alt="CockroachBet Logo"
+              className="h-20 md:h-16 w-auto object-contain transition-transform group-hover:scale-105"
+            />
           </div>
 
           <div className="hidden lg:flex items-center gap-4">

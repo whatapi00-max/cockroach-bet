@@ -3,9 +3,12 @@ import { X } from 'lucide-react';
 import { wa } from '../../utils/whatsapp';
 
 const announcements = [
+  "🪳 Cockroach Never Quits. Neither Do We.",
+  "💰 3% BONUS on Every Deposit — Automatically Added!",
   "⚡ New Game ADDED: Cockroach Crash LIVE NOW",
-  "🏆 Tournament starts in 2 hours — Prize pool: $10,000",
-  "💎 VIP members get 30% extra cashback TODAY only"
+  "🏆 Tournament starts in 2 hours — Prize pool: ₹10,00,000",
+  "💎 VIP members get 30% extra cashback TODAY only",
+  "🎁 3% Deposit Bonus — Every Single Time, No Limit!"
 ];
 
 export default function AnnouncementBar() {

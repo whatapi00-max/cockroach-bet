@@ -3,7 +3,6 @@ import HeroBanner from '../components/home/HeroBanner';
 import BonusStrip from '../components/home/BonusStrip';
 import GameGrid from '../components/home/GameGrid';
 import SportsBettingPreview from '../components/home/SportsBettingPreview';
-import VIPSection from '../components/home/VIPSection';
 import PromoAndTrustSection from '../components/home/PromoAndTrustSection';
 import CryptoSection from '../components/home/CryptoSection';
 import TestimonialsSection from '../components/home/TestimonialsSection';
@@ -44,9 +43,6 @@ export default function Home() {
       </section>
       <section aria-label="Sports Betting">
         <SportsBettingPreview />
-      </section>
-      <section aria-label="VIP Program">
-        <VIPSection />
       </section>
       <section aria-label="Promotions">
         <PromoAndTrustSection />
