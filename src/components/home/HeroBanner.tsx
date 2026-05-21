@@ -5,6 +5,7 @@ import { wa, WA_MESSAGES } from '../../utils/whatsapp';
 const slides = [
   {
     id: 1,
+    bgImage: '/images/Banner.jpeg',
     bg: 'from-purple-900/50 to-purple-700/50',
     badge: 'LIMITED OFFER',
     headline: 'NEW PLAYER? GET 500% BONUS',
@@ -15,6 +16,7 @@ const slides = [
   },
   {
     id: 2,
+    bgImage: '/images/Banner1.jpeg',
     bg: 'from-red-900/50 to-orange-700/50',
     badge: 'LIVE NOW',
     headline: 'AVIATOR IS LIVE — FLY HIGH, CASH OUT FAST',
@@ -26,6 +28,7 @@ const slides = [
   },
   {
     id: 3,
+    bgImage: '/images/Banner2.jpg',
     bg: 'from-green-900/50 to-emerald-700/50',
     badge: 'DAILY CASHBACK',
     headline: 'LOSE TODAY? GET 30% BACK TOMORROW',
@@ -36,6 +39,7 @@ const slides = [
   },
   {
     id: 4,
+    bgImage: '/images/Banner4.png',
     bg: 'from-yellow-900/50 to-amber-700/50',
     badge: 'TOURNAMENT',
     headline: 'WEEKLY TOURNAMENT — ₹8,20,000 PRIZE POOL',
@@ -46,6 +50,7 @@ const slides = [
   },
   {
     id: 5,
+    bgImage: '/images/Banner3.png',
     bg: 'from-purple-950/50 to-black/50',
     badge: 'VIP EXCLUSIVE',
     headline: 'VIP ROYALE — PLAY MORE, EARN MORE',
@@ -71,14 +76,31 @@ export default function HeroBanner() {
   const slide = slides[currentSlide];
 
   return (
-    <div className="relative rounded-2xl overflow-hidden min-h-[400px] sm:min-h-[450px] md:min-h-[550px] border border-border-glow shadow-2xl shadow-[0_0_50px_rgba(0,255,136,0.2)]">
+    <div className="relative rounded-2xl overflow-hidden h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px] xl:h-[800px] border border-border-glow shadow-2xl shadow-[0_0_50px_rgba(0,255,136,0.2)]">
       {/* Animated background */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${slide.bg} transition-all duration-700`}></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40"></div>
+      {slide.bgImage ? (
+        <img
+          src={slide.bgImage}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-top transition-all duration-700"
+        />
+      ) : (
+        <div className={`absolute inset-0 bg-gradient-to-br ${slide.bg} transition-all duration-700`}></div>
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/50"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-10 right-10 text-8xl opacity-20 float-animation">{slide.emoji}</div>
       <div className="absolute bottom-10 left-10 text-6xl opacity-10 float-animation" style={{ animationDelay: '1s' }}>{slide.emoji}</div>
+
+      {/* Centered logo */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+        <img
+          src="/images/logo.png"
+          alt="CockroachBet"
+          className="w-48 sm:w-64 md:w-80 opacity-10 select-none"
+        />
+      </div>
       
       <div className="relative z-10 p-6 sm:p-8 md:p-12 lg:p-20 h-full flex flex-col justify-center">
         <div className="max-w-3xl">

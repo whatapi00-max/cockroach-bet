@@ -14,8 +14,12 @@ export default function JackpotTicker() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-neon-red/20 via-neon-orange/20 to-neon-gold/20 border-y border-border-glow py-3">
-      <div className="max-w-[1920px] mx-auto px-4">
+    <div className="bg-gradient-to-r from-neon-red/20 via-neon-orange/20 to-neon-gold/20 border-y border-border-glow py-3 relative overflow-hidden">
+      {/* Centered logo watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <img src="/images/logo.png" alt="" className="h-16 sm:h-20 opacity-10 select-none" />
+      </div>
+      <div className="max-w-[1920px] mx-auto px-4 relative z-10">
         <div className="flex flex-col gap-2">
           <div className="flex flex-col items-center gap-2 text-center">
             <div className="flex items-center gap-3">
