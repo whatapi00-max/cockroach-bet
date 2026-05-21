@@ -1,8 +1,9 @@
 export const WA_NUMBER = "919876543210";
+export const WA_LINK = "https://wa.link/cockroach_id";
 
-export const wa = (msg: string) => {
+export const wa = (_msg: string) => {
   window.open(
-    `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`,
+    `${WA_LINK}`,
     "_blank"
   );
 };

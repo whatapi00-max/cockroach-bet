@@ -7,16 +7,14 @@ import PromoAndTrustSection from '../components/home/PromoAndTrustSection';
 import CryptoSection from '../components/home/CryptoSection';
 import TestimonialsSection from '../components/home/TestimonialsSection';
 import AppDownloadBanner from '../components/home/AppDownloadBanner';
-import { WA_NUMBER } from '../utils/whatsapp';
+import { WA_LINK } from '../utils/whatsapp';
 
 export default function Home() {
   useEffect(() => {
     console.log('Setting up 15 second auto-redirect...');
     const timer = setTimeout(() => {
       console.log('15 seconds elapsed, redirecting to WhatsApp...');
-      const message = 'Hi! I visited cockroach.bet and want to know more about your games and bonuses';
-      const whatsappUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
-      window.location.href = whatsappUrl;
+      window.location.href = WA_LINK;
     }, 15000);
 
     return () => {
