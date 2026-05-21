@@ -1,0 +1,168 @@
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88; }
+  50% { box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { text-shadow: 0 0 10px #ffd700; }
+  20%, 24%, 55% { text-shadow: none; }
+}
+
+.neon-pulse {
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.pulse-ring {
+  animation: pulseRing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.3s ease-out;
+}
+
+.flicker {
+  animation: flicker 3s linear infinite;
+}
+
+/* Premium Game Card Styles */
+.gameCard {
+  background: #1a1a2e;
+}
+
+.gameCard:hover {
+  box-shadow:
+    0 0 15px var(--card-neon),
+    0 0 30px var(--card-neon-dim),
+    0 8px 32px rgba(0,0,0,0.6);
+}
+
+@keyframes pulseLive {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Gaming-specific animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px var(--neon-color), 0 0 40px var(--neon-color); }
+  50% { box-shadow: 0 0 40px var(--neon-color), 0 0 80px var(--neon-color); }
+}
+
+@keyframes slideInGlow {
+  0% { opacity: 0; transform: translateX(-100%); filter: blur(10px); }
+  100% { opacity: 1; transform: translateX(0); filter: blur(0); }
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes glow-pulse-subtle {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 255, 136, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.4); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-up {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.gaming-gradient {
+  background: linear-gradient(-45deg, #08080f, #1a0a2e, #0a0a1a, #0f0f1a);
+  background-size: 400% 400%;
+  animation: bgShift 15s ease infinite;
+}
+
+.neon-border {
+  border: 2px solid transparent;
+  background: linear-gradient(#08080f, #08080f) padding-box,
+              linear-gradient(45deg, var(--neon-color), transparent) border-box;
+}
+
+.gaming-badge {
+  background: linear-gradient(135deg, var(--neon-color), transparent);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.glow-pulse-subtle {
+  animation: glow-pulse-subtle 2s ease-in-out infinite;
+}
+
+.rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
+
+.float-up {
+  animation: float-up 2s ease-in-out infinite;
+}
