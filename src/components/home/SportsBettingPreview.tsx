@@ -5,14 +5,14 @@ import { wa, WA_MESSAGES } from '../../utils/whatsapp';
 export default function SportsBettingPreview() {
   return (
     <div className="py-8">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-3xl font-bold text-text-primary bg-gradient-to-r from-neon-blue via-cyan-400 to-neon-blue bg-clip-text text-transparent animate-gradient-x">⚽ SPORTS BETTING</h2>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neon-blue">⚽ SPORTS BETTING ON <span className="text-brand">COCKROACH.BET</span></h2>
         <button
           onClick={() => wa('Hi! I want to BET ON SPORTS on cockroach.bet')}
-          className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-neon-blue to-cyan-400 text-bg-primary font-bold rounded-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(0,100,255,0.5)] transition-all animate-gradient-x"
+          className="flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-neon-blue to-cyan-400 text-bg-primary font-bold text-sm sm:text-base rounded-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(0,100,255,0.5)] transition-all animate-gradient-x whitespace-nowrap"
         >
-          <span>BET NOW ON ALL SPORTS</span>
-          <ArrowRight size={18} />
+          <span>BET NOW ON COCKROACH.BET</span>
+          <ArrowRight size={16} />
         </button>
       </div>
 
@@ -23,7 +23,7 @@ export default function SportsBettingPreview() {
             className="bg-gradient-to-br from-bg-card to-bg-tertiary border border-border-glow rounded-xl p-4 hover:shadow-xl hover:shadow-[0_0_30px_rgba(0,100,255,0.3)] transition-all glow-pulse-subtle"
           >
             <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-bold text-neon-red animate-pulse">🔴 LIVE</span>
+              <span className="text-xs font-bold text-neon-red animate-pulse">🔴 LIVE ON COCKROACH.BET</span>
               <span className="text-xs text-text-muted">{match.time}</span>
             </div>
             <div className="flex items-center justify-between mb-3">

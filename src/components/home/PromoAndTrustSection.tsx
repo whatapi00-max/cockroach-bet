@@ -28,7 +28,8 @@ export default function PromoAndTrustSection() {
   return (
     <div className="py-8 space-y-12">
       <div>
-        <h2 className="text-3xl font-bold text-text-primary mb-6 text-center">WHY CHOOSE US</h2>
+        <h2 className="text-3xl font-bold text-text-primary mb-2 text-center">WHY CHOOSE <span className="text-brand">COCKROACH.BET</span>?</h2>
+        <p className="text-center text-text-muted mb-6"><span className="text-brand font-bold">cockroach.bet</span> — The platform that never quits on you</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyChooseUs.map((item, idx) => (
             <div key={idx} className="bg-bg-card border border-border-glow rounded-xl p-6 text-center">
@@ -42,9 +43,9 @@ export default function PromoAndTrustSection() {
 
       <div>
         <h2 className="text-3xl font-bold text-text-primary mb-4 text-center">
-          TIRED OF GETTING SCAMMED BY FAKE BOOKIES?
+          TIRED OF FAKE BOOKIES? TRY <span className="text-brand">COCKROACH.BET</span>
         </h2>
-        <p className="text-center text-text-muted mb-6">See how we compare to the rest</p>
+        <p className="text-center text-text-muted mb-6">See how <span className="text-brand font-bold">cockroach.bet</span> compares to the rest</p>
         
         <div className="bg-bg-card border border-border-glow rounded-xl overflow-hidden">
           <table className="w-full">
@@ -52,7 +53,7 @@ export default function PromoAndTrustSection() {
               <tr className="border-b border-border-glow">
                 <th className="text-left p-4 text-text-primary font-bold">Feature</th>
                 <th className="text-center p-4 text-text-muted font-bold">❌ Others</th>
-                <th className="text-center p-4 text-neon-green font-bold">✅ cockroach.bet</th>
+                <th className="text-center p-4 text-brand font-bold">✅ cockroach.bet</th>
               </tr>
             </thead>
             <tbody>
@@ -69,7 +70,7 @@ export default function PromoAndTrustSection() {
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold text-text-primary mb-6 text-center">TRUST & CERTIFICATIONS</h2>
+        <h2 className="text-3xl font-bold text-text-primary mb-6 text-center"><span className="text-brand">COCKROACH.BET</span> TRUST & CERTIFICATIONS</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {trustBadges.map((badge, idx) => (
             <div

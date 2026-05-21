@@ -8,14 +8,11 @@ export default function Footer() {
       <div className="max-w-[1920px] mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="text-3xl">🪳</div>
-              <div className="font-bold text-xl bg-gradient-to-r from-neon-green to-emerald-400 bg-clip-text text-transparent">
-                cockroach.bet
-              </div>
+            <div className="flex items-center mb-4">
+              <img src="/images/logo.png" alt="CockroachBet" className="h-14 w-auto object-contain" />
             </div>
             <p className="text-sm text-text-muted mb-4">
-              The cockroach never dies. Neither does your luck.
+              <span className="text-brand font-bold">cockroach.bet</span> — The cockroach never dies. Neither does your luck.
             </p>
             <div className="flex gap-3">
               {['📱', '💬', '📧', '🌐'].map((icon) => (
@@ -33,7 +30,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-text-primary mb-4">QUICK LINKS</h4>
             <ul className="space-y-2">
-              {['Home', 'Casino', 'Sports', 'Live Casino', 'VIP', 'Promotions'].map((link) => (
+              {['Home', 'Casino', 'Sports', 'Live Casino', 'Promotions', 'cockroach.bet App'].map((link) => (
                 <li key={link}>
                   <button
                     onClick={() => wa(`Hi! I want to explore ${link} on cockroach.bet`)}
@@ -111,8 +108,9 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="text-center text-xs text-text-muted pt-6 border-t border-border-glow">
-            © 2024 cockroach.bet — All rights reserved.
+          <div className="flex flex-col items-center gap-2 pt-6 border-t border-border-glow">
+            <img src="/images/logo.png" alt="CockroachBet" className="h-10 w-auto object-contain opacity-60" />
+            <div className="text-center text-xs text-text-muted">© 2025 <span className="text-brand font-bold">cockroach.bet</span> — All rights reserved.</div>
           </div>
         </div>
       </div>

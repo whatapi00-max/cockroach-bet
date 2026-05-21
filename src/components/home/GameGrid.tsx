@@ -27,7 +27,7 @@ export default function GameGrid() {
 
   return (
     <div className="py-8">
-      <h2 className="text-3xl font-bold text-text-primary mb-6 bg-gradient-to-r from-neon-green via-emerald-400 to-neon-green bg-clip-text text-transparent animate-gradient-x">🎮 ALL GAMES</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neon-green mb-6">🎮 ALL GAMES ON <span className="text-brand">COCKROACH.BET</span></h2>
       
       {/* Tabs */}
       <div className="flex gap-2 overflow-x-auto pb-4 mb-6 scrollbar-hide">
@@ -48,7 +48,7 @@ export default function GameGrid() {
       </div>
 
       {/* Game Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 md:gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
         {filteredGames.map((game) => (
           <GameCard key={game.id} game={game} />
         ))}

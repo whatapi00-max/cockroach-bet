@@ -13,7 +13,7 @@ export default function AppDownloadBanner() {
                 <div className="p-6 pt-10">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-2xl">🪳</span>
-                    <span className="text-sm font-bold text-neon-green">cockroach.bet</span>
+                    <span className="text-sm font-bold text-brand">cockroach.bet</span>
                   </div>
                   <div className="space-y-2">
                     <div className="h-20 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg"></div>
@@ -34,10 +34,10 @@ export default function AppDownloadBanner() {
 
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-              COCKROACH.BET APP — PLAY ANYWHERE
+              <span className="text-brand">COCKROACH.BET</span> APP — PLAY ANYWHERE
             </h2>
             <p className="text-text-muted mb-6">
-              Download our mobile app for the ultimate gaming experience on the go
+              Download the <span className="text-brand font-bold">cockroach.bet</span> mobile app for the ultimate gaming experience on the go
             </p>
 
             <div className="space-y-3 mb-8">
@@ -65,17 +65,17 @@ export default function AppDownloadBanner() {
                 className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-neon-green text-bg-primary font-bold rounded-lg hover:bg-neon-green/90 transition-all"
               >
                 <Smartphone size={24} />
-                <span>Download for Android</span>
+                <span>Download <span className="text-brand">cockroach.bet</span> for Android</span>
               </button>
               <button
                 onClick={() => wa(WA_MESSAGES.appDownload)}
                 className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-white text-bg-primary font-bold rounded-lg hover:bg-white/90 transition-all"
               >
                 <Apple size={24} />
-                <span>Download for iOS</span>
+                <span>Download <span className="text-brand">cockroach.bet</span> for iOS</span>
               </button>
               <p className="text-xs text-text-muted text-center">
-                Direct APK — No App Store needed. 100% safe.
+                <span className="text-brand font-bold">cockroach.bet</span> APK — No App Store needed. 100% safe.
               </p>
             </div>
           </div>

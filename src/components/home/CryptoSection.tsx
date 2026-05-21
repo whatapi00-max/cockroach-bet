@@ -14,10 +14,10 @@ export default function CryptoSection() {
     <div className="py-8">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-text-primary mb-3">
-          DEPOSIT WITH CRYPTO — GET EXTRA 25% BONUS
+          DEPOSIT ON <span className="text-brand">COCKROACH.BET</span> WITH CRYPTO — GET EXTRA 25% BONUS
         </h2>
         <p className="text-text-muted">
-          Crypto deposits are anonymous, instant, and fee-free
+          <span className="text-brand font-bold">cockroach.bet</span> crypto deposits are anonymous, instant, and fee-free
         </p>
       </div>
 
@@ -34,7 +34,7 @@ export default function CryptoSection() {
               onClick={() => wa(`Hi! I want to DEPOSIT WITH ${crypto.name} on cockroach.bet`)}
               className="w-full px-4 py-2 bg-neon-green/10 border border-neon-green/30 text-neon-green font-bold rounded-lg hover:bg-neon-green/20 transition-all"
             >
-              DEPOSIT WITH {crypto.name.split(' ')[0]}
+              DEPOSIT ON cockroach.bet
             </button>
           </div>
         ))}

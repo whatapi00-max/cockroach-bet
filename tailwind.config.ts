@@ -12,6 +12,7 @@ export default {
         'bg-secondary': '#0f0f1a',
         'bg-tertiary': '#141420',
         'bg-card': '#1a1a2e',
+        'brand': '#00e5ff',
         'neon-green': '#00ff88',
         'neon-red': '#ff003c',
         'neon-blue': '#00c3ff',

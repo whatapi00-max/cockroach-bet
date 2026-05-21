@@ -21,29 +21,28 @@ export default function JackpotTicker() {
       </div>
       <div className="max-w-[1920px] mx-auto px-4 relative z-10">
         <div className="flex flex-col gap-2">
-          <div className="flex flex-col items-center gap-2 text-center">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">💣</span>
-              <span className="text-sm font-bold text-text-muted">MEGA JACKPOT</span>
+          <div className="flex flex-col items-center gap-1 text-center">
+            <div className="flex items-center gap-2 justify-center whitespace-nowrap overflow-hidden">
+              <span className="text-xl">💣</span>
+              <span className="text-xs font-bold text-text-muted"><span className="text-brand">COCKROACH.BET</span> MEGA JACKPOT:</span>
+              <span className="text-xl sm:text-2xl md:text-3xl font-bold font-mono text-neon-gold flicker">
+                ₹<CountUp end={megaJackpot} decimals={0} duration={0.1} preserveValue separator="," />
+              </span>
             </div>
-            <div className="text-3xl md:text-4xl font-bold font-mono text-neon-gold flicker">
-              ₹<CountUp end={megaJackpot} decimals={0} duration={0.1} preserveValue separator="," />
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-bold text-text-muted">🎰 DAILY DROP JACKPOT:</span>
-              <span className="text-xl font-bold font-mono text-neon-orange">
+            <div className="flex items-center gap-2 justify-center whitespace-nowrap overflow-hidden">
+              <span className="text-xs font-bold text-text-muted">🎰 <span className="text-brand">COCKROACH.BET</span> DAILY DROP:</span>
+              <span className="text-lg sm:text-xl font-bold font-mono text-neon-orange">
                 ₹<CountUp end={dailyDrop} decimals={0} duration={0.1} preserveValue separator="," />
               </span>
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-6 flex-wrap border-t border-border-glow/40 pt-2">
-            <span className="text-sm font-black text-text-primary tracking-wide">
-              🪳 Cockroach Never Quits. Neither Do We.
+          <div className="flex flex-col items-center justify-center gap-1 border-t border-border-glow/40 pt-2 w-full">
+            <span className="text-base sm:text-lg md:text-xl font-black text-text-primary tracking-wide text-center">
+              🪳 <span className="text-brand">cockroach.bet</span> — Cockroach Never Quits. Neither Do We.
             </span>
-            <span className="w-px h-4 bg-border-glow hidden sm:block"></span>
-            <span className="text-sm font-black text-neon-gold animate-pulse">
-              💰 3% BONUS on Every Deposit — Automatically Added!
+            <span className="text-base sm:text-lg md:text-xl font-black text-neon-gold animate-pulse text-center">
+              💰 3% BONUS on Every Deposit on <span className="text-brand">cockroach.bet</span> — Automatically Added!
             </span>
           </div>
         </div>

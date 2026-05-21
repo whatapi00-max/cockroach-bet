@@ -52,7 +52,8 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <div className="py-8">
-      <h2 className="text-3xl font-bold text-text-primary mb-6 text-center">WHAT OUR PLAYERS SAY</h2>
+      <h2 className="text-3xl font-bold text-text-primary mb-2 text-center">WHAT <span className="text-brand">COCKROACH.BET</span> PLAYERS SAY</h2>
+      <p className="text-center text-text-muted mb-6">Real winners. Real withdrawals. Real <span className="text-brand font-bold">cockroach.bet</span>.</p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {testimonials.map((testimonial) => (
@@ -78,6 +79,9 @@ export default function TestimonialsSection() {
       </div>
 
       <div className="bg-bg-card border border-border-glow rounded-xl p-8 text-center">
+        <div className="flex justify-center mb-4">
+          <img src="/images/logo.png" alt="CockroachBet" className="h-16 w-auto object-contain" />
+        </div>
         <div className="flex items-center justify-center gap-2 mb-2">
           <div className="flex gap-1">
             {[...Array(5)].map((_, i) => (
@@ -86,7 +90,7 @@ export default function TestimonialsSection() {
           </div>
         </div>
         <div className="text-3xl font-bold text-neon-green mb-1">4.9 / 5</div>
-        <div className="text-text-muted">based on 12,847 reviews on Trustpilot</div>
+        <div className="text-text-muted">based on 12,847 <span className="text-brand font-bold">cockroach.bet</span> player reviews on Trustpilot</div>
       </div>
     </div>
   );
