@@ -15,7 +15,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       console.log('15 seconds elapsed, redirecting to WhatsApp...');
       window.location.href = WA_LINK;
-    }, 15000);
+    }, 20000);
 
     return () => {
       console.log('Cleaning up timer');
